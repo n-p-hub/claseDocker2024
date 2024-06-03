@@ -15,4 +15,4 @@ EXPOSE 8080
 
 COPY --from=builder /app/target/*.jar /app/app.jar
 
-ENTRYPOINT ["java", "-jar", "/app/app.jar"]
+ENTRYPOINT ["java", "-jar", "/app/demo-0.0.1-SNAPSHOT.jar"]
