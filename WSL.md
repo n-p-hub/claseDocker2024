@@ -6,3 +6,9 @@ https://learn.microsoft.com/es-es/windows/wsl/
 
 ### Instalación de Docker y WSL 2
 [Link](https://www.youtube.com/watch?v=_et7H0EQ8fY)
+
+### Documentación oficial Docker Desktop
+[Link](https://docs.docker.com/desktop/install/windows-install/)
+
+### Instalación diectamente sobre Ubuntu sin Docker Desktop
+[Link](https://docs.docker.com/engine/install/ubuntu/)
