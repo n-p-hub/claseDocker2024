@@ -1,4 +1,4 @@
-FROM eclipse-temurin:22-jdk-jammy AS builder
+FROM eclipse-temurin:22-jdk-jammy
 
 WORKDIR /app
 
@@ -6,13 +6,6 @@ ADD demo/ .
 
 RUN ./mvnw clean install
 
-
-FROM eclipse-temurin:22-jdk-jammy
-
-WORKDIR /app
-
 EXPOSE 8080
 
-COPY --from=builder /app/target/*.jar /app/app.jar
-
-ENTRYPOINT ["java", "-jar", "/app/demo-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "/app/target/demo-0.0.1-SNAPSHOT.jar"]

@@ -69,10 +69,10 @@ docker exec -ti <container_name> bash
 docker exec -ti <container_name> sh
 ```
 
-### Mysql
-Image: https://hub.docker.com/_/mysql
+### Mariadb
+Image: https://hub.docker.com/_/mariadb
 ```
-docker run --name un-mysql -e MYSQL_ROOT_PASSWORD=test1234 -p 33333:3306 -d mysql
+docker run --name un-mariadb -e MARIADB_ROOT_PASSWORD=test1234 -p 33333:3306 -d mariadb
 ```
 
 ### RabbitMQ
@@ -91,11 +91,6 @@ docker build -t springbootapp .
 
 ### Docker Compose
 [docker-compose.yml](/docker-compose.yml) 
-
-Para Mysql (NO RECOMENDADO PARA ENTORNOS PRODUCTIVOS)
-```
-command: --default-authentication-plugin=mysql_native_password
-```
 
 Ejecutar de los servicios declarados en el docker compose:
 ```
